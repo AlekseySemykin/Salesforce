@@ -45,18 +45,9 @@ export default class LightningDatatableLWCExample extends LightningElement {
     }
     //    как дополнительный вариант обновление по кнопке
     clickedButtonLabel;
-
+    
     handleClick(event) {
-                parseJSON()
-        .then(result => {
-            this.base = data[0].CurrencyPair__r.Base__c
-            this.date = data[0].CurrencyPair__r.Date__c
-            this.pairList = data;
-        })
-        .catch(error => {
-            this.error = error;
-        });
-
+        
         this.clickedButtonLabel = event.target.label;
         console.log('!@#$% clickedButtonLabel');
 
